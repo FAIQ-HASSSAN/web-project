@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Urbanist" , sans-serif;
+}
+
+:root{
+
+    /* css variables  */
+
+    --bs-dark-color: #1a1d20;
+    --bs-dark-primary:#1c1c1c;
+    --bs-main-color:#fff;
+    --bs-primary-color:#c6c6c6;
+    --secondary-color: #29a9fd;
+    --bs-supporting-color: #C850C0;
+}
+
+h1, h2,h3,h4,h5{
+    font-family: 'Lexend Deca', sans-serif;
+
+    /* to access css variable we use var() and variable name inside it   */
+    color: var( --bs-dark-color);
+    /* color: var(--secondary-color); */
+}
+
+h1{
+    font-size: 3.8rem;
+}
+
+
+h2{
+
+    /* // 2 sentence ke beeche ki height ko line height kehte   */
+    line-height: 4rem;
+    font-weight: 600;
+    font-size: 3.4rem;
+}
+
+p{
+    margin: 0;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var( --bs-dark-color);
+    letter-spacing: 0.07rem;
+    line-height: 1.55rem;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+.common-heading
+{
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem !important;
+}
+
+
+.common-section
+{
+    padding: 0 0 9rem 0;
+}
+
+.common-title
+{
+   margin-bottom: 4.2rem;
+}
+
+/* nav bar style  */
+
+.nav-link
+{
+    color: var(--bs-main-color);
+}
+
+.nav-link:hover
+{
+    color: var(--secondary-color) !important;
+}
+
+.text-light-grey
+{
+    color: var(--bs-primary-color);
+}
+
+
+/* jitne bhi button or a tag hu ge wu sb target hu ge  */
+button , a
+{
+   font-size: 1.15rem !important;
+   letter-spacing: 0.03rem;
+   word-spacing: .1rem;
+}
+
+/* hero section start  */
+
+
+  /* iska mutlub ye ha ke hero section ke andar ju class container ha isko target kr rahe  */
+.hero-section .container
+{
+    display: grid;
+    place-content: center;
+    height: inherit;
+    /* color: white; */
+
+
+}
+
+.bg-main
+{
+    height: 80vh;
+    position: relative;
+}
+
+.bg-color
+{
+    background-color: var(--bs-dark-primary);
+}
+
+/* .bg-theme
+{
+    color: var(--bs-supporting-color);
+    background-image: none !important;
+} */
+
+.hero-video--section
+{
+    /* max-width: 100%; */
+    border-radius: 2rem;
+    width: 25rem;
+    /* height: auto; */
+}
+
+/* // custom shape code by shape divider  */
+
+.custom-shape-divider-bottom-1692366013 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1692366013 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 40px;
+}
+
+.custom-shape-divider-bottom-1692366013 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+
+
+/* services section  */
+
+.service-section
+{
+
+    /* // 6rem from top  */
+      /* // 0 rem from left  */
+       /* // 3rem from bottom  */
+        /* // 0 from right  */
+  padding: 6rem 0 3rem 0 !important;
+}
+
+
+.icon-span
+{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: var(--secondary-color);
+    color: var(--bs-main-color);
+}
+
+
+.card-box:hover
+{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+
+/* more info section style  */
+
+.more-info-section{
+    background-image: linear-gradient(rgba(22,22,22,0.6), rgba(22,22,22,0.9)), url("https://images.pexels.com/photos/316093/pexels-photo-316093.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* // this background: background-attachment: fixed is used to create parallex effect ; */
+    background-attachment: fixed;
+    padding: 6rem 0;
+    overflow: hidden;
+}
+
+
+
+.more-info-section .image-section 
+{
+    position: relative;
+}
+
+.more-info-section .image-section img
+{
+    width: 70%;
+}
+
+
+
+/* online mode styling  */
+
+.business-section
+{
+    padding-top: 3rem;
+}
+
+
+.carousel .card 
+{
+    background-color: #262631;
+    color: var(--bs-main-color);
+    transition: all 0.3s linear;
+}
+
+.carousel-inner p
+{
+    color: var(--bs-main-color);
+}
+
+.carousel .card:hover
+{
+    background-color: var(--bs-main-color);
+    color: var(--bs-dark-color)
+}
+
+
+.carousel .card:hover p
+{
+    color: var(--bs-dark-color);
+}
+
+
+.carousel .card:hover .fa-star
+{
+    color: var(--bs-supporting-color)
+}
+
+
+.carousel-indicators
+{
+    bottom: -20%;
+}
+
+
+.carousel-indicators #carouselExampleIndicators
+{
+    width: .7rem;
+    height: .7rem;
+    background-color: var(--secondary-color);
+}
+
+
+/* expert panel style  */
+
+.text-grey
+{
+   color: var(--bs-primary-color);
+}
+
+.text-light-grey
+{
+    color: var(--bs-primary-color);
+}
+
+
+/* // shape divider  */
+
+
+.common-section
+{
+    position: relative;
+}
+
+.custom-shape-divider-top-1692547066 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1692547066 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-top-1692547066 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+.common-section .common-title
+{
+    padding-top: 3rem;
+}
+
+.contact-section .form-section
+{
+    width: 40%;
+}
+
+#for_home
+{
+    color: white;
+}
